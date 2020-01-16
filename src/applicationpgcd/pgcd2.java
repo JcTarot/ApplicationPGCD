@@ -52,11 +52,10 @@ public class pgcd2 {
         int x = reader.nextInt();
         System.out.print("un entier : ");
         int y = reader.nextInt();
-        System.out.printf("pgcd : %d /n", PGCD2(x, y));
+        System.out.printf("pgcd : %d /n", PGCD(x, y));
     }
     
-    public static int PGCD2(int a, int b) {
-        int pgcd=0;    
+    public static int PGCD(int a, int b) {   
         while ( a != b ) { 
             if ( a >= b ) a = a-b;
             else b = b-a;
